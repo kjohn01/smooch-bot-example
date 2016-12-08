@@ -10,7 +10,7 @@ module.exports = new Script({
 
     start: {
         receive: (bot) => {
-            return bot.say('Hi! I\'m Smooch Bot!')
+            return bot.say('Hi! I\'m KJ Bot!')
                 .then(() => 'askName');
         }
     },
@@ -30,7 +30,7 @@ Is that OK? %[Yes](postback:yes) %[No](postback:no)`))
         receive: (bot, message) => {
             return bot.getProp('name')
                 .then((name) => bot.say(`Sorry ${name}, my creator didn't ` +
-                        'teach me how to do anything else!'))
+                        'teach me how to do anything else! GoodBye'))
                 .then(() => 'finish');
         }
     }
